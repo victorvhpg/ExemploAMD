@@ -1,5 +1,5 @@
 (function(require, define) {
-
+    "use strict";
     var Modulo = function(id, r) {
         this.id = id;
         this.referencia = r;
@@ -48,7 +48,7 @@
             require(vetIdModulos, function() {
                 for (var i = 0; i < vetIdModulos.length; i++) {
                     that.modulos.push(new Modulo(vetIdModulos[i], require(vetIdModulos[i])));
-                };
+                }
                 callback(that.modulos);
             });
             //outra maneira
@@ -82,7 +82,7 @@
             }
             vetModulos.push(modulo);
         });
-        if (vetModulos.length == 0) {
+        if (vetModulos.length === 0) {
             throw new Error("Nenhum controlador");
         }
         var objControlador = new Controlador();
