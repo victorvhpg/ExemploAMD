@@ -1,4 +1,4 @@
-define(["jquery"],function($) {
+define(["jquery"], function($) {
     "use strict";
 
 
@@ -12,7 +12,7 @@ define(["jquery"],function($) {
             return this.nome;
         },
 
-        init: function(){
+        init: function() {
             console.log("ProdutoConsulta init");
         }
     };
